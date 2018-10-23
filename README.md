@@ -1,1 +1,2 @@
-# The Unofficial Rotten Tomatoes bot made for Telegram using the Telegraf platform.
+# Unofficial Rotten Tomatoes Bot
+### Made for Telegram using the Telegraf platform.
