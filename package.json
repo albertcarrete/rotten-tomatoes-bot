@@ -1,0 +1,25 @@
+{
+  "name": "rottentomatoes_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_BOT_TOKEN='793044766:AAHPt9fXoulTBIQ5J5c3lkjpW6FxVDx_lkc' node index.js",
+    "babel": "NODE_BOT_TOKEN='793044766:AAHPt9fXoulTBIQ5J5c3lkjpW6FxVDx_lkc' babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "cheerio": "^1.0.0-rc.2",
+    "node-fetch": "^2.2.0",
+    "puppeteer": "^1.9.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "telegraf": "^3.24.1"
+  }
+}
