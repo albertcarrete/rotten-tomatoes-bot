@@ -4,7 +4,16 @@ import $ from 'cheerio';
 export default async(term) => {
   try{
   let url = `https://www.rottentomatoes.com/search/?search=${encodeURIComponent(term)}`;
-  const browser = await puppeteer.launch();
+  
+  if(process.env.NODE_PLATFORM === "linux"){
+    const browser = await puppeteer.launch({
+      "headless":true,
+      "executablePath":"/usr/bin/chromium-browser",
+      "args":['--no-sandbox','--disable-setuid-sandbox']
+    });
+  }else{
+    const browser = await puppeteer.launch();
+  }  
   const page = await browser.newPage();
   await page.goto(url);
   const html = await page.content();
