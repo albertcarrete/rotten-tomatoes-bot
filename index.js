@@ -6,11 +6,12 @@ const fetch = require('node-fetch')
 
 import processTomatoes from './processTomatoes';
 import getSearchData from './getSearchData';
+import keys from './config/keys';
 import {toSeoUrl} from './utils';
 // const getScores = require('./getScores');
 // async/await example.
 
-const bot = new Telegraf("793044766:AAHPt9fXoulTBIQ5J5c3lkjpW6FxVDx_lkc")
+const bot = new Telegraf(keys.botToken)
 
 bot.action(/tomato (.+)/, async(ctx) => {
   try{

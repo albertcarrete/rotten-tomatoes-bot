@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "linux":" NODE_PLATFORM='linux' NODE_BOT_TOKEN='793044766:AAHPt9fXoulTBIQ5J5c3lkjpW6FxVDx_lkc' babel-node index.js",
+    "linux":" NODE_ENV='production' NODE_PLATFORM='linux' babel-node index.js",
     "start": "NODE_BOT_TOKEN='793044766:AAHPt9fXoulTBIQ5J5c3lkjpW6FxVDx_lkc' node index.js",
-    "babel": "NODE_BOT_TOKEN='793044766:AAHPt9fXoulTBIQ5J5c3lkjpW6FxVDx_lkc' babel-node index.js",
+    "babel": "NODE_ENV='production' babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
